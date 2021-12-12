@@ -13,7 +13,6 @@ if __name__ == '__main__':
         graph[a].append(b)
         graph[b].append(a)
 
-    print(graph)
 
     def visit(start='start', cache=set()):
 
@@ -27,11 +26,9 @@ if __name__ == '__main__':
 
         nexts = graph[start]
         if start.islower():
-            #print('start', start)
             cache.add(start)
 
         for next in nexts:
-            #print(start, '->', next, cache)
             paths += visit(start=next, cache=cache.copy())
 
         return paths
