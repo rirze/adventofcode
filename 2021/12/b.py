@@ -1,5 +1,4 @@
-from collections import defaultdict
-from typing import Counter
+from collections import defaultdict, Counter
 
 
 if __name__ == '__main__':
